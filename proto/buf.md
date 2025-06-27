@@ -8,4 +8,4 @@ This is probably the only model you should really care about, the rest are meant
 
 Useful links:
 - Documentation: [https://substreams.streamingfast.io/](https://substreams.streamingfast.io/) ([Firehose Docs](https://firehose.streamingfast.io/))
-- Source: [https://github.com/streamingfast/firehose-solana](https://github.com/streamingfast/firehose-solana)
+- Source: [https://github.com/rockawayx-labs/firehose-solana](https://github.com/rockawayx-labs/firehose-solana)

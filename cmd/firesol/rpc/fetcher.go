@@ -8,12 +8,12 @@ import (
 	"github.com/spf13/pflag"
 
 	"github.com/gagliardetto/solana-go/rpc"
+	firecore "github.com/rockawayx-labs/firehose-core"
+	"github.com/rockawayx-labs/firehose-core/blockpoller"
+	firecoreRPC "github.com/rockawayx-labs/firehose-core/rpc"
+	"github.com/rockawayx-labs/firehose-solana/block/fetcher"
 	"github.com/spf13/cobra"
 	"github.com/streamingfast/cli/sflags"
-	firecore "github.com/streamingfast/firehose-core"
-	"github.com/streamingfast/firehose-core/blockpoller"
-	firecoreRPC "github.com/streamingfast/firehose-core/rpc"
-	"github.com/streamingfast/firehose-solana/block/fetcher"
 	"github.com/streamingfast/logging"
 	"go.uber.org/zap"
 )
@@ -61,8 +61,10 @@ func fetchRunE(logger *zap.Logger, tracer logging.Tracer) firecore.CommandExecut
 		rpcEndpoints := sflags.MustGetStringArray(cmd, "endpoints")
 		rpcClients := firecoreRPC.NewClients[*rpc.Client](maxBlockFetchDuration, firecoreRPC.NewStickyRollingStrategy[*rpc.Client](), logger)
 		for _, rpcEndpoint := range rpcEndpoints {
-			client := rpc.New(rpcEndpoint)
-			rpcClients.Add(client)
+			for i := 0; i < sflags.MustGetInt(cmd, "block-fetch-batch-size"); i++ {
+				client := rpc.New(rpcEndpoint)
+				rpcClients.Add(client)
+			}
 		}
 
 		latestBlockRetryInterval := sflags.MustGetDuration(cmd, "latest-block-retry-interval")

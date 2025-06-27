@@ -1,6 +1,6 @@
-module github.com/streamingfast/firehose-solana
+module github.com/rockawayx-labs/firehose-solana
 
-go 1.24
+go 1.24.2
 
 toolchain go1.24.3
 
@@ -15,17 +15,17 @@ require (
 	github.com/gagliardetto/solana-go v1.8.4
 	github.com/klauspost/compress v1.17.11
 	github.com/mr-tron/base58 v1.2.0
+	github.com/rockawayx-labs/firehose-core v1.9.15
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/pflag v1.0.5
 	github.com/streamingfast/binary v0.0.0-20240116152459-ebe30de95370
 	github.com/streamingfast/bstream v0.0.2-0.20250416133616-23bdc92e0e9c
 	github.com/streamingfast/cli v0.0.4-0.20250424204306-678ec20cedec
-	github.com/streamingfast/dstore v0.1.1-0.20250217165048-d508dcc6b33e
-	github.com/streamingfast/firehose-core v1.9.11-0.20250602133810-7af5bf279fb7
+	github.com/streamingfast/dstore v0.1.1-0.20250609173504-95368d3441ee
 	github.com/streamingfast/logging v0.0.0-20230608130331-f22c91403091
 	github.com/streamingfast/solana-go v0.5.1-0.20230622180848-8faf68a7cb1d
 	github.com/test-go/testify v1.1.4
-	go.uber.org/zap v1.26.0
+	go.uber.org/zap v1.27.0
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d
 	google.golang.org/protobuf v1.36.6
 )
@@ -66,6 +66,7 @@ require (
 	github.com/blendle/zapdriver v1.3.2-0.20200203083823-9200777f8a3d // indirect
 	github.com/bobg/go-generics/v3 v3.5.0 // indirect
 	github.com/bufbuild/protocompile v0.4.0 // indirect
+	github.com/cenkalti/backoff/v5 v5.0.2 // indirect
 	github.com/census-instrumentation/opencensus-proto v0.4.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/charmbracelet/lipgloss v1.0.0 // indirect
@@ -158,14 +159,15 @@ require (
 	github.com/streamingfast/derr v0.0.0-20250321151415-6b4fbbcb1bb5 // indirect
 	github.com/streamingfast/dgrpc v0.0.0-20250423172640-223250ed2391 // indirect
 	github.com/streamingfast/dhammer v0.0.0-20230125192823-c34bbd561bd4 // indirect
-	github.com/streamingfast/dmetering v0.0.0-20241101155221-489f5a9d9139 // indirect
+	github.com/streamingfast/dmetering v0.0.0-20250606124734-944cf3e4959e // indirect
 	github.com/streamingfast/dmetrics v0.0.0-20250425183830-ffcef0cc9f87 // indirect
 	github.com/streamingfast/dtracing v0.0.0-20220305214756-b5c0e8699839 // indirect
+	github.com/streamingfast/firehose-networks v0.1.0 // indirect
 	github.com/streamingfast/opaque v0.0.0-20210811180740-0c01d37ea308 // indirect
 	github.com/streamingfast/pbgo v0.0.6-0.20250114182320-0b43084f4000 // indirect
 	github.com/streamingfast/sf-tracing v0.0.0-20240430173521-888827872b90 // indirect
 	github.com/streamingfast/shutter v1.5.0 // indirect
-	github.com/streamingfast/substreams v1.15.7 // indirect
+	github.com/streamingfast/substreams v1.15.9-0.20250617190236-60cf06e02371 // indirect
 	github.com/stretchr/testify v1.10.0 // indirect
 	github.com/subosito/gotenv v1.4.2 // indirect
 	github.com/teris-io/shortid v0.0.0-20201117134242-e59966efd125 // indirect
