@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/rockawayx-labs/firehose-core/cmd/tools"
+	"github.com/rockawayx-labs/firehose-solana/cmd/firesol/rpc"
 	"github.com/spf13/cobra"
-	"github.com/streamingfast/firehose-core/cmd/tools"
-	"github.com/streamingfast/firehose-solana/cmd/firesol/rpc"
 	"github.com/streamingfast/logging"
 	"go.uber.org/zap"
 )
 
-var logger, tracer = logging.PackageLogger("firesol", "github.com/streamingfast/firehose-solana")
+var logger, tracer = logging.PackageLogger("firesol", "github.com/rockawayx-labs/firehose-solana")
 var rootCmd = &cobra.Command{
 	Use:   "firesol",
 	Short: "firesol fetching and tooling",

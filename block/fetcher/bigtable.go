@@ -16,7 +16,7 @@ import (
 
 	"cloud.google.com/go/bigtable"
 	"github.com/klauspost/compress/zstd"
-	pbsolv1 "github.com/streamingfast/firehose-solana/pb/sf/solana/type/v1"
+	pbsolv1 "github.com/rockawayx-labs/firehose-solana/pb/sf/solana/type/v1"
 	"github.com/streamingfast/logging"
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/proto"

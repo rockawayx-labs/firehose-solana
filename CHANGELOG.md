@@ -27,11 +27,11 @@ for instructions to keep up to date.
 ## v1.0.5
 
 * Fixes fetching "huge" blocks --> no longer panics, increased default size and added `--reader-node-line-buffer-size` flag to control this
-* Bumped `firehose-core` to version [v1.5.6](https://github.com/streamingfast/firehose-core/releases/tag/v1.5.6).
+* Bumped `firehose-core` to version [v1.5.6](https://github.com/rockawayx-labs/firehose-core/releases/tag/v1.5.6).
 
 ## v1.0.4
 
-* Bumped `firehose-core` to version [v1.5.1](https://github.com/streamingfast/firehose-core/releases/tag/v1.5.1).
+* Bumped `firehose-core` to version [v1.5.1](https://github.com/rockawayx-labs/firehose-core/releases/tag/v1.5.1).
 
 * Fixed `firesol fetch rpc` to report fetch error(s) at least once each 30s.
 
@@ -61,7 +61,7 @@ for instructions to keep up to date.
 
 ### Operator notes
 > [!IMPORTANT]
-> 1. All firehose processes have been removed from this binary. You will need to run this program from the [firecore binary](https://github.com/streamingfast/firehose-core)
+> 1. All firehose processes have been removed from this binary. You will need to run this program from the [firecore binary](https://github.com/rockawayx-labs/firehose-core)
 >    - Previous `firesol start ...` command becomes `firecore start ...`
 > 2. New Poller: firesol no longer gets blocks from a Bigtable instance: it fetches the blocks using RPC calls
 >    - Run `firecore start reader`  with `--reader-node-path=/path/to/firesol` and `--reader-node-arguments=fetch rpc <https://your.solana.rpc/path> <start-block>`
@@ -71,7 +71,7 @@ for instructions to keep up to date.
 
 ### Removed
 
-* All the `firesol start ...` commands have been removed. Use [firecore binary](https://github.com/streamingfast/firehose-core) to run the reader, merger, relayer, firehose and substreams services
+* All the `firesol start ...` commands have been removed. Use [firecore binary](https://github.com/rockawayx-labs/firehose-core) to run the reader, merger, relayer, firehose and substreams services
 * All the existing `firesol tools` commands
 
 ### Added
