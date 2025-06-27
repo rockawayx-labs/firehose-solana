@@ -15,7 +15,7 @@ require (
 	github.com/gagliardetto/solana-go v1.8.4
 	github.com/klauspost/compress v1.17.11
 	github.com/mr-tron/base58 v1.2.0
-	github.com/rockawayx-labs/firehose-core v1.9.15
+	github.com/rockawayx-labs/firehose-core v1.9.16
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/pflag v1.0.5
 	github.com/streamingfast/binary v0.0.0-20240116152459-ebe30de95370
