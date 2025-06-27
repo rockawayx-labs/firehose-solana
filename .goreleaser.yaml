@@ -1,0 +1,6 @@
+version: 2
+builds:
+  - main: ./cmd/firesol
+    targets:
+      - "linux_amd64"
+    binary: firesol
